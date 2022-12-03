@@ -5,17 +5,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # prueba tecnica Mutual ser Dagoberto Altamar
 
 
-# En la parte principal tenemos el Home El cuál tiene todas las rutas las cuáles tiene
+En la parte principal tenemos el Home El cuál tiene todas las rutas las cuáles tiene
 ->saveMoney .\
 ->quantityCoin .\
 ->currencyAmount .\
 ->howManyCoins .\
 ->howMuchMoney
-# En la parte de currencyValues he creado todas las denominación de las diferentes monedas
+En la parte de currencyValues he creado todas las denominación de las diferentes monedas
 
 
-# en el metodo SaveMoney tenemos todas estas denominaciones que es es select que mostrará solo
-# las monedas correspondientes
+en el metodo SaveMoney tenemos todas estas denominaciones que es es select que mostrará solo
+las monedas correspondientes
 currency === 50
 currency === 100
 currency === 200
