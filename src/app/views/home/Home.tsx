@@ -13,26 +13,18 @@ import {
 //confing
 import { NameRoutes } from '../../config/nameRoutes';
 
-
 export const Home = () => {
-
    const navigation = useNavigate();
-
    //punto 1
    const saveMoney = () => navigation(NameRoutes.saveMoney); 
-
    // punto 2
    const quantityCoin = () => navigation(NameRoutes.quantityCoin);
-
     // punto 3
    const currencyAmount = () => navigation(NameRoutes.currencyAmount);
-
     // punto 4
    const howManyCoins = () => navigation(NameRoutes.howManyCoins);
-
     // punto 5
    const howMuchMoney = () => navigation(NameRoutes.howMuchMoney);
-
 
   return (
    <React.Fragment>
@@ -62,7 +54,6 @@ export const Home = () => {
            >
              Ahorrar
            </Button>
-
            <Button
              onClick={quantityCoin}
              size="large"
@@ -71,7 +62,6 @@ export const Home = () => {
            >
              Cantidad de monedas
            </Button>
-
            <Button
              onClick={currencyAmount}
              size="large"
@@ -80,7 +70,6 @@ export const Home = () => {
            >
              Cantidad de dinero
            </Button>
-
            <Button
              onClick={howManyCoins}
              size="large"
@@ -89,7 +78,6 @@ export const Home = () => {
            >
              Cuantas Monedas 
            </Button>
-
            <Button
              onClick={howMuchMoney}
              size="large"
@@ -98,7 +86,6 @@ export const Home = () => {
            >
              Cuanto Dinero
            </Button>
-           
          </CardContent>
        </Card>
      </Box>
