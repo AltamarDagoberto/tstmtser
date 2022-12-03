@@ -22,11 +22,22 @@ currency === 200
 currency === 500
 currency === 1000
 
+# en quantityCoin  se podra saber la cantidad de monedas dentro de la alcancia
 
 
+# en currencyAmount se puede observar la cantidad de dinero dentro de la alcancia
 
+# en howManyCoins  yo puedo saber la cantidad de monedas por denominacion 
+50
+100
+200
+500
+1000
 
+en los dos ultimos puntos cabe resaltar que al momento de seleccionar la moneda el usuario debe de darle aceptar una vez seleccionado la moneda.
+ 
 
+# en cualquier momento yo puedo saber la cantidad de dinero por denominacion dentro de la alcancia.
 
 
 
