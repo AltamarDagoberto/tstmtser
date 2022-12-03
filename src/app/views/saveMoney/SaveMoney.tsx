@@ -15,35 +15,23 @@ import {
 
 //hooks
 import { useDispatch, useMoney } from '../../hooks/MoneyHook';
-
 //utils
 import { currencyValues } from '../../utils/currencyValues';
-
 //interfaces
 import { MoneyData } from '../../context/iMoney';
-
 //actions 
 import { ADDMONEY } from '../../context/actions';
-
 import { sumMoney } from '../../utils/dataOperations';
 
-
 export const SaveMoney = () => {
-
   const navigation = useNavigate();
-
   const { piggyBank } = useMoney();
-
   const dispatch = useDispatch();
-
   const [state, setState] = useState({
     currency: '50'
   });
 
-
   const result = useCallback(() => { return sumMoney(piggyBank.currency) } , [piggyBank.currency])
-
-
   const saveCurrency = () => {
     const { currency } = state;
     if (currency === "50" ||
@@ -52,16 +40,10 @@ export const SaveMoney = () => {
       currency === "500" ||
       currency === "1000"
     ) {
-
      const idMoney:string =  new Date().getHours().toString();
-
       dispatch({ type: ADDMONEY, payload: { value:currency, id:idMoney }});
-
     }
-
   };
-
-
   const handleChange = ({ target }: any) => {
     const { value, name } = target;
     setState(prev => ({
@@ -69,7 +51,6 @@ export const SaveMoney = () => {
       [name]: value
     }))
   };
-
 
   return (
     <React.Fragment>
@@ -99,8 +80,6 @@ export const SaveMoney = () => {
               <Typography color={'InfoText'} style={{fontSize:30}}>{result()}</Typography>
             </Box>
           </Grid>
-
-
 
           <Grid item xs={12} sm={12} md={12}>
             <FormControl fullWidth variant="outlined">
